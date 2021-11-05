@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Assets from "./assets/assets.export";
 import CoffeeMug from "./components/coffee-mug";
+import Ball from "./components/ball";
 
 function App() {
   return (
@@ -43,7 +44,8 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="absolute z-10 bottom-44 left-1/4">
+        <div className="absolute z-10 bottom-0 left-1/4 flex items-end">
+          <Ball ballColor="yellow" />
           <CoffeeMug />
         </div>
       </div>

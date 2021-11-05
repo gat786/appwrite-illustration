@@ -2,6 +2,7 @@
   height: 1.5rem;
   width: 100%;
   position: relative;
+  z-index: 10;
   background-color: var(--green);
 }
 
@@ -13,30 +14,53 @@
   width: 110%;
   z-index: 10;
   border-top: 1px solid gray;
-  height: 8px;
+  height: .5rem;
   background-color: var(--green);
 }
 
 .mug {
   position: relative;
+  top: -20px;
   width: 80px;
   height: 0;
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
   border-top: 10rem solid var(--prominent-pink);
-  filter: drop-shadow(-25px 25px 24px -6px rgb(5, 5, 5, 0.3));
+}
+
+.mug::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 10px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-color: var(--prominent-pink);
+}
+
+.mugShadow {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  z-index: -10;
+  content: "";
+  width: 80px;
+  height: 100%;
+  box-shadow: -25px 25px 24px -6px rgb(5, 5, 5, 0.3);
 }
 
 .mugBg {
   background: transparent;
 }
 
-.mug::after {
-  content: "";
-  position: absolute;
+.circle {
+  display: block;
+  background: yellow;
+  border-radius: 50%;
+  height: 100%;
   width: 100%;
-  height: 10px;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  background-color: var(--prominent-pink);
+
+  background: radial-gradient(circle at 60% 30%, yellow, #00000055);
+  box-shadow: var(--desktop-shadow);
 }
