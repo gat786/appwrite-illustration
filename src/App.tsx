@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Assets from "./assets/assets.export";
+import CoffeeMug from "./components/coffee-mug";
 
 function App() {
   return (
@@ -41,6 +42,9 @@ function App() {
               <div className="desktop-icon orange-dot-in-pink"></div>
             </div>
           </div>
+        </div>
+        <div className="absolute z-10 bottom-44 left-1/4">
+          <CoffeeMug />
         </div>
       </div>
       <div className="floor">
