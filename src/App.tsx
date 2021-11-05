@@ -45,8 +45,101 @@ function App() {
           </div>
         </div>
         <div className="absolute z-10 bottom-0 left-1/4 flex items-end">
-          <Ball ballColor="yellow" />
+          <Ball ballColor="#ceb317" ballSizeRem={20} />
           <CoffeeMug />
+        </div>
+
+        <div
+          style={{
+            top: "20%",
+            left: "10%",
+          }}
+          className="absolute"
+        >
+          <Ball ballColor="rgba(193, 69, 109, 1)" ballSizeRem={8} />
+        </div>
+        <div
+          style={{
+            top: "10%",
+            left: "15%",
+          }}
+          className="absolute"
+        >
+          <Ball ballColor="rgba(193, 69, 109, 1)" ballSizeRem={4} />
+        </div>
+        <div
+          style={{
+            top: "30%",
+            left: "85%",
+          }}
+          className="absolute"
+        >
+          <Ball ballColor="rgba(193, 69, 109, 1)" ballSizeRem={8} />
+        </div>
+        <div
+          style={{
+            top: "10%",
+            left: "75%",
+          }}
+          className="absolute"
+        >
+          <Ball ballColor="rgba(193, 69, 109, 1)" ballSizeRem={4} />
+        </div>
+
+        <div
+          style={{
+            top: "10%",
+            left: "8%",
+          }}
+          className="absolute"
+        >
+          <Ball ballColor="rgba(176, 146, 138, 1)" ballSizeRem={12} />
+        </div>
+        <div
+          style={{
+            top: "35%",
+            left: "4%",
+          }}
+          className="absolute"
+        >
+          <Ball ballColor="rgba(176, 146, 138, 1)" ballSizeRem={8} />
+        </div>
+
+        <div
+          style={{
+            top: "15%",
+            left: "94%",
+          }}
+          className="absolute"
+        >
+          <Ball ballColor="rgba(176, 146, 138, 1)" ballSizeRem={20} />
+        </div>
+        <div
+          style={{
+            top: "12%",
+            left: "84%",
+          }}
+          className="absolute"
+        >
+          <Ball ballColor="rgba(176, 146, 138, 1)" ballSizeRem={16} />
+        </div>
+        <div
+          style={{
+            top: "45%",
+            left: "70%",
+          }}
+          className="absolute"
+        >
+          <Ball ballColor="rgba(176, 146, 138, 1)" ballSizeRem={12} />
+        </div>
+        <div
+          style={{
+            top: "55%",
+            left: "90%",
+          }}
+          className="absolute"
+        >
+          <Ball ballColor="rgba(176, 146, 138, 1)" ballSizeRem={16} />
         </div>
       </div>
       <div className="floor">

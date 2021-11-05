@@ -56,11 +56,10 @@
 
 .circle {
   display: block;
-  background: yellow;
   border-radius: 50%;
   height: 100%;
   width: 100%;
 
-  background: radial-gradient(circle at 60% 30%, yellow, #00000055);
+  /* background: radial-gradient(circle at 60% 30%, rgb(255, 193, 87), #1a1a1a 200%); */
   box-shadow: var(--desktop-shadow);
 }
