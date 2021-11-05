@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --wall: rgba(176, 146, 138, 1);
+  --prominent-pink: rgba(193, 69, 109, 1);
+  --desktop-shadow: -10px 10px 10px -3px rgba(5, 5, 5, 0.082);
+  --green: rgba(49, 135, 96, 1);
+  --yellow: rgba(186, 137, 61, 1);
+}
+
+.wall {
+  height: 90vh;
+  background: var(--wall);
+  position: relative;
+}
+
+.floor {
+  position: relative;
+  height: 10vh;
+  width: 100vw;
+  background: var(--wall);
+}
+
+.floor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: rotate(180deg);
+  background: linear-gradient(to bottom, transparent 30%, #00000012 100%);
+}
+
+.built-with-appwrite {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  top: -25%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+  z-index: 20;
+
+  white-space: nowrap;
+
+  width: max-content;
+  padding: 1rem;
+  background-color: rgb(53, 48, 52);
+  border-radius: 12px;
+  color: white;
+}
+
+.appwrite-desktop{
+  width: 30rem;
+  height: 20rem;
+  border-radius: 2rem;
+
+  position: absolute;
+  bottom: .5rem;
+  left: 0px;
+  right: 0px;
+  margin-inline: auto;
+
+  padding: 2rem;
+
+  background-color: var(--prominent-pink);
+  z-index: 10;
+
+  box-shadow: -25px 25px 24px -6px rgb(5, 5, 5, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.window-buttons{
+  display: flex;
+  justify-content: flex-end;
+  gap: .5rem;
+}
+
+.window-buttons > div{
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background: #fff;
+
+  box-shadow: var(--desktop-shadow);
+}
+
+.desktop-icon{
+  height: 4rem;
+}
+
+.orange-dot-in-pink{
+  background-color: var(--prominent-pink);
+  box-shadow: var(--desktop-shadow);
+  position: relative;
+
+  width: 5rem;
+  float: right;
+
+  display: grid;
+  place-items: center;
+  border-radius: .5rem;
+}
+
+.orange-dot-in-pink::after{
+  position: absolute;
+  
+  content: '';
+  height: 80%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background-color: yellow;
+}
+
+.window-title{
+  text-align: center;
+  border-radius: .5rem;
+  background-color: #fff;
+  padding: .5rem;
+  font-size: 1.2rem;
+
+  box-shadow: var(--desktop-shadow);
+}
+
+.window{
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: .5rem;
+  padding: 1rem;
+
+  box-shadow: var(--desktop-shadow);
+}
+
+.full{
+  width: 100%;
+}
+
+.broken{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bars{
+  margin: .5rem;
+}
+
+.bars div{
+  border-radius: 1rem;
+}
+
+.big {
+  width: 60%;
+}
+
+.small{
+  width: 35%;
+}
+
+.item-h-4 > div{
+  height: 1rem;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.green{
+  background-color: var(--green);
+}
+
+.appwrite-pink{
+  background-color: var(--prominent-pink);
+}
