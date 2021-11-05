@@ -63,3 +63,7 @@
   /* background: radial-gradient(circle at 60% 30%, rgb(255, 193, 87), #1a1a1a 200%); */
   box-shadow: var(--desktop-shadow);
 }
+
+.languageCard{
+  background-color: var(--yellow);
+}

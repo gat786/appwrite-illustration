@@ -11,10 +11,6 @@ function App() {
     <div>
       <div className={`wall`}>
         <div className="appwrite-desktop">
-          <div className="language-cards">
-            <LanguageCard />
-          </div>
-
           <div className="window-buttons">
             <div></div>
             <div></div>
@@ -48,7 +44,15 @@ function App() {
               <div className="desktop-icon orange-dot-in-pink"></div>
             </div>
           </div>
+          <div className="language-cards">
+            <LanguageCard imgSrc={Logos.AndroidBot} position="" />
+            <LanguageCard imgSrc={Logos.Apple} position="" />
+            <LanguageCard imgSrc={Logos.Javascript} position="" />
+            <LanguageCard imgSrc={Logos.AndroidBot} position="" />
+            <LanguageCard imgSrc={Logos.Swift} position="" />
+          </div>
         </div>
+
         <div className="absolute z-10 bottom-0 left-1/4 flex items-end">
           <Ball ballColor="#ceb317" ballSizeRem={20} />
           <CoffeeMug />
