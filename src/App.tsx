@@ -1,15 +1,20 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Assets from "./assets/assets.export";
+import { Assets, Logos } from "./assets/assets.export";
 import CoffeeMug from "./components/coffee-mug";
 import Ball from "./components/ball";
+import LanguageCard from "./components/language-card";
 
 function App() {
   return (
     <div>
       <div className={`wall`}>
         <div className="appwrite-desktop">
+          <div className="language-cards">
+            <LanguageCard />
+          </div>
+
           <div className="window-buttons">
             <div></div>
             <div></div>

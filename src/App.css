@@ -181,3 +181,7 @@
 .appwrite-pink{
   background-color: var(--prominent-pink);
 }
+
+.language-cards{
+  position: absolute;
+}
