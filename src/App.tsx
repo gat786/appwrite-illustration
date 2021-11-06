@@ -44,17 +44,16 @@ function App() {
               <div className="desktop-icon orange-dot-in-pink"></div>
             </div>
           </div>
-          <div className="language-cards">
-            <LanguageCard imgSrc={Logos.AndroidBot} position="" />
-            <LanguageCard imgSrc={Logos.Apple} position="" />
-            <LanguageCard imgSrc={Logos.Javascript} position="" />
-            <LanguageCard imgSrc={Logos.AndroidBot} position="" />
-            <LanguageCard imgSrc={Logos.Swift} position="" />
-          </div>
+
+          <LanguageCard imgSrc={Logos.AndroidBot} position="-right-10 top-16" />
+          <LanguageCard imgSrc={Logos.Apple} position="-left-12 -top-6" />
+          <LanguageCard imgSrc={Logos.Javascript} position="left-1/3 -top-20" />
+          <LanguageCard imgSrc={Logos.Flutter} position="-left-20 top-40" />
+          <LanguageCard imgSrc={Logos.Swift} position="-right-20 top-48" />
         </div>
 
-        <div className="absolute z-10 bottom-0 left-1/4 flex items-end">
-          <Ball ballColor="#ceb317" ballSizeRem={20} />
+        <div className="absolute z-10 -bottom-4 left-96 flex items-end">
+          <Ball ballColor="#fce205" ballSizeRem={20} />
           <CoffeeMug />
         </div>
 

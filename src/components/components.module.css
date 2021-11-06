@@ -14,7 +14,7 @@
   width: 110%;
   z-index: 10;
   border-top: 1px solid gray;
-  height: .5rem;
+  height: 0.5rem;
   background-color: var(--green);
 }
 
@@ -26,6 +26,12 @@
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
   border-top: 10rem solid var(--prominent-pink);
+  /* border-image: linear-gradient(
+    90deg,
+    rgba(166, 52, 101, 1) 0%,
+    rgba(198, 72, 116, 1) 57%,
+    rgba(166, 52, 101, 1) 100%
+  ); */
 }
 
 .mug::after {
@@ -64,6 +70,18 @@
   box-shadow: var(--desktop-shadow);
 }
 
-.languageCard{
+.languageCard {
+  position: absolute;
   background-color: var(--yellow);
+  box-shadow: var(--desktop-shadow);
+  width: max-content;
+}
+
+.languageCard > div {
+  box-shadow: var(--desktop-shadow);
+}
+
+.languageCard img {
+  object-fit: contain;
+  filter: drop-shadow(-4px 2px 8px #ccc);
 }
