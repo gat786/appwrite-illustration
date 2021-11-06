@@ -6,6 +6,7 @@ import CoffeeMug from "./components/coffee-mug";
 import Ball from "./components/ball";
 import LanguageCard from "./components/language-card";
 import FlowerPot from "./components/flower-pot";
+import Mouse from "./components/mouse";
 
 function App() {
   return (
@@ -156,6 +157,9 @@ function App() {
         </div>
       </div>
       <div className="floor">
+        <div className="absolute top-0 right-1/3">
+          <Mouse />
+        </div>
         <div className="built-with-appwrite capitalize">
           built with{" "}
           <img className="h-8" src={Assets.BuiltWithAppwrite} alt="" />

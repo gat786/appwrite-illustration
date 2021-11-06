@@ -166,3 +166,16 @@
   height: 100px;
   box-shadow: -25px 25px 24px -6px rgb(5, 5, 5, 0.3);
 }
+
+/* .mouse{
+  position: absolute;
+  height: 40px;
+  width: 100px;
+  background-color: yellow;
+  transform: rotate(10deg);
+
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 120px;
+  border-bottom-left-radius: 40px;
+} */
