@@ -5,6 +5,7 @@ import { Assets, Logos } from "./assets/assets.export";
 import CoffeeMug from "./components/coffee-mug";
 import Ball from "./components/ball";
 import LanguageCard from "./components/language-card";
+import FlowerPot from "./components/flower-pot";
 
 function App() {
   return (
@@ -55,6 +56,10 @@ function App() {
         <div className="absolute z-10 -bottom-4 left-96 flex items-end">
           <Ball ballColor="#fce205" ballSizeRem={20} />
           <CoffeeMug />
+        </div>
+
+        <div className="absolute right-1/4 bottom-0">
+          <FlowerPot />
         </div>
 
         <div
